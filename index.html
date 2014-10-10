@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+  	<meta charset="utf-8">
+    <title>Level Editor</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js"></script>
+</head>
+<body>
+    <canvas id="canvas" width="900" height="600"></canvas>
+    <p><span class="desc">Change Canvas Dimensions: </span> w: <input id="canvasWidth" type="text" value="0"/> h: <input id="canvasHeight" type="text" value="0"/></p>
+    <p><span class="desc">Change Tile Dimensions: </span> w: <input id="tileWidth" type="text" value="0"/> h: <input id="tileHeight" type="text" value="0"/></p>
+    <p><span class="desc">Tile Color: </span></p><div id="tileColorPreview"></div>
+
+    <br />
+    <p>H <input id="rangeH" type="range" min="0" max="360" step="1" value="0"/> <span id="valueH">0</span></p>
+    <br />
+    <p>S <input id="rangeS" type="range" min="0" max="100" step="1" value="0"/> <span id="valueS">0</span></p>
+    <br />
+    <p>L <input id="rangeL" type="range" min="0" max="100" step="1" value="0"/> <span id="valueL">0</span></p>
+    <br />
+    <p>A <input id="rangeA" type="range" min="0" max="1" step=".01" value="0"/> <span id="valueA">0</span></p>
+
+    <p><span class="desc">Place Tile: </span>Click</p>
+    <p><span class="desc">Remove Tile: </span>Shift + Click</p>
+</body>
+</html>
